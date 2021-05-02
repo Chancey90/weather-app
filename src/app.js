@@ -57,7 +57,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("New York");
+search("London");
 
 let form = document.querySelector("#search-bar");
 form.addEventListener("submit", handleSubmit);
