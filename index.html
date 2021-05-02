@@ -17,22 +17,24 @@
   <body>
     <div class="container-wrapper">
       <div class="container">
-        <h1>City, Country</h1>
-        <ul>
-          <li>Day Time</li>
-          <li>Weather Summary</li>
-        </ul>
+        <div class="summary">
+          <h1>City, Country</h1>
+          <ul>
+            <li>Day Time</li>
+            <li>Weather Summary</li>
+          </ul>
+        </div>
         <div class="row">
           <div class="col-6">
-            <ul>
-              <li>
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="partly-cloudy"
-                />
-                12&deg;C | &deg;F
-              </li>
-            </ul>
+            <div class="clearfix today">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="partly-cloudy"
+                class="float-left"
+              />
+              <strong>12</strong>
+              <small>&deg;C|<a href="#">&deg;F</a></small>
+            </div>
           </div>
           <div class="col-6" id="details">
             <ul>

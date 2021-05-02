@@ -29,3 +29,29 @@ li {
   border: 1px solid #70757a;
   border-radius: 6px;
 }
+
+.summary {
+  margin-bottom: 20px;
+}
+
+.today img {
+  margin-top: -30px;
+  margin-right: 15px;
+  height: 64px;
+}
+
+.today strong {
+  font-size: 55px;
+  font-weight: 100;
+  line-height: 1;
+  color: black;
+}
+
+.today small {
+  position: relative;
+  top: -31px;
+}
+
+.today a {
+  text-decoration: none;
+}
