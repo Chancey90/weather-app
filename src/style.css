@@ -2,30 +2,3 @@ body {
   font-family: arial, sans-serif;
   color: #70757a;
 }
-
-.container {
-  width: 600px;
-  margin: 0 auto;
-  border: solid #ced4da;
-  border-radius: 6px;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.col-6 {
-  margin: 0 auto;
-  text-align: center;
-}
-
-#details {
-  text-align: left;
-}
-
-.col-2 {
-  margin: 0 auto;
-  text-align: center;
-}
