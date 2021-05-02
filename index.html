@@ -11,6 +11,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -18,10 +19,10 @@
     <div class="container-wrapper">
       <div class="container">
         <div class="summary">
-          <h1>City, Country</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Day Time</li>
-            <li>Weather Summary</li>
+            <li id="weather-summary">Weather Summary</li>
           </ul>
         </div>
         <div class="row">
@@ -32,15 +33,15 @@
                 alt="partly-cloudy"
                 class="float-left"
               />
-              <strong>12</strong>
+              <strong id="temp"></strong>
               <small>&deg;C|<a href="#">&deg;F</a></small>
             </div>
           </div>
           <div class="col-6" id="details">
             <ul>
-              <li>Humidity: 10%</li>
-              <li>Wind speed: 5km/h</li>
-              <li>Feels like: 7&deg</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind speed: <span id="speed"></span>km/h</li>
+              <li>Feels like: <span id="feels-like"></span>&deg;C</li>
             </ul>
           </div>
         </div>
