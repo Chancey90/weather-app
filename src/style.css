@@ -66,11 +66,12 @@ li::first-letter {
 }
 
 .forecast-day {
-  margin-bottom: -25px;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 
 .forecast-temp {
-  margin-top: -25px;
+  margin-top: -20px;
 }
 
 .forecast {
@@ -78,5 +79,5 @@ li::first-letter {
 }
 
 .forecast img {
-  margin-left: -11px;
+  margin-left: -15px;
 }
