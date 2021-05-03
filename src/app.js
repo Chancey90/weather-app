@@ -21,26 +21,36 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatForecastDay(time) {
+  let date = new Date(time * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
           <div class="col-2">
             <ul>
               <li class="forecast-day">
-                ${day}
+                ${formatForecastDay(forecastDay.dt)}
               </li>
               <li>
-                <img src="http://openweathermap.org/img/wn/03d@2x.png" alt=""/>
+                <img src="http://openweathermap.org/img/wn/${
+                  forecastDay.weather[0].icon
+                }@2x.png" alt=""/>
               </li>
               <li class="forecast-temp">
-                Temp
+                ${Math.round(forecastDay.temp.day)}°
               </li>
             </ul>
           </div>`;
