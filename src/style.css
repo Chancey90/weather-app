@@ -71,17 +71,18 @@ li::first-letter {
 }
 
 #details {
-  margin-bottom: 20px;
-  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-left: 70px;
 }
 
 .forecast-day {
   margin-top: 10px;
-  margin-bottom: -20px;
+  margin-bottom: -15px;
+  color: black;
 }
 
 .forecast-temp {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .forecast {
