@@ -64,3 +64,19 @@ li::first-letter {
 .today a {
   text-decoration: none;
 }
+
+.forecast-day {
+  margin-bottom: -25px;
+}
+
+.forecast-temp {
+  margin-top: -25px;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.forecast img {
+  margin-left: -11px;
+}
